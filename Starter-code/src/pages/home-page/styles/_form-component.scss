@@ -1,0 +1,187 @@
+@mixin form-component {
+    .form-component {
+        align-self: center;
+        position: relative;
+        width: 100%;
+        min-width: var(--form-min-width);
+        font-size: 16px;
+        letter-spacing: -0.03em;
+        margin: 0 var(--margin-left-form);
+        margin-top: var(--form-margin-top);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        & &__header {
+            align-self: var(--header-align-self);
+            width: 250px;
+            margin-bottom: var(--margin-big);
+            margin-right: var(--padding-right-header);
+            font-size: var(--header-font-size);
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            font-weight: 600;
+            text-align: var(--text-align-header);
+        }
+
+        & &__input {
+            height: 56px;
+            border: 1px solid #DADFE9;
+            border-radius: 18px;
+            padding: 0 22px;
+            padding-top: 15px;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+            padding-bottom: 13px;
+
+            &:hover+label {
+                color: #8A94A8;
+                cursor: text;
+            }
+
+            &:hover {
+                border: 1px solid #8A94A8;
+            }
+
+            &:focus {
+                border: 1px solid #0D1016;
+                outline: none;
+            }
+
+            &--name {
+                width: 100%;
+                margin-bottom: var(--margin-small);
+
+
+            }
+
+            &--card {
+                width: 100%;
+                margin-bottom: var(--margin-small);
+            }
+
+            &--date {
+                width: var(--date-width);
+            }
+
+            &--cvv {
+                width: var(--cvv-width);
+            }
+
+            &.wrong {
+                border: 1px solid red !important;
+
+            }
+
+
+        }
+
+        & &__container-for-date-cvv {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: var(--margin-medium);
+        }
+
+        label {
+            font-size: 12px;
+            color: #DADFE9;
+            letter-spacing: -0.03em;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+
+            &.wrongLabel {
+                color: red !important;
+            }
+        }
+
+
+
+        & &__name-label {
+            position: absolute;
+            top: var(--name-label-top); //172px;
+            left: var(--label-left);
+
+            &.inactive-name {
+                font-size: var(--font-size-label-inactive);
+                letter-spacing: -0.03em;
+                top: var(--name-label-top-inactive);
+
+            }
+
+        }
+
+        & &__card-label {
+            position: absolute;
+            top: var(--card-label-top); // 242px;
+            left: var(--label-left);
+
+            &.inactive-card {
+                font-size: var(--font-size-label-inactive);
+                letter-spacing: -0.03em;
+                top: var(--card-label-top-inactive);
+
+            }
+
+        }
+
+        & &__date-label {
+            position: absolute;
+            top: var(--date-label-top); // 312px;
+            left: var(--label-left);
+
+            &.inactive-date {
+                font-size: var(--font-size-label-inactive);
+                letter-spacing: -0.03em;
+                top: var(--date-label-top-inactive);
+
+            }
+        }
+
+        & &__cvv-label {
+            position: absolute;
+            top: var(--cvv-label-top); //  312px;
+            right: var(--cvv-label-right);
+
+
+            &.inactive-cvv {
+                font-size: var(--font-size-label-inactive);
+                letter-spacing: -0.03em;
+                top: 20px;
+                top: var(--cvv-label-top-inactive);
+            }
+        }
+
+        & &__button {
+            width: 100%;
+            height: 56px;
+            border-radius: 18px;
+            border: 0px solid transparent;
+            background-color: #2162E3;
+            color: white;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background-color: #3A78F4;
+                color: white;
+                cursor: pointer;
+            }
+
+            &:active {
+                background-color: #1957D4;
+                color: white;
+                cursor: pointer;
+                transition: all 0.1s ease-in-out;
+            }
+
+            &:disabled {
+                cursor: auto;
+                background-color: #EBEFF5;
+            }
+        }
+
+    }
+
+}

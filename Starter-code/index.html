@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INVO Academy JS Starter with Vite</title>
+</head>
+
+<!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
+
+<body>
+  <div id="home-page">
+
+    <section class="form-section">
+      <img class="logo logo-desktop" src="./public/images/logo.png" alt="">
+      <form class="form-component">
+        <h1 class="form-component__header">Add your informations</h1>
+        <input class="form-component__input form-component__input--name" type="text" id="name-input">
+        <label class="form-component__name-label inactive-name" for="name-input">Name on card</label>
+
+        <input class="form-component__input form-component__input--card" maxlength="19" type="text" id="card-input">
+        <label class="form-component__card-label inactive-card" for="card-input">Card number</label>
+
+        <div class="form-component__container-for-date-cvv">
+          <input class="form-component__input form-component__input--date" maxlength="5" type="text" id="date-input">
+          <label class="form-component__date-label inactive-date" for="date-input">Expiry date (MM/YY)</label>
+
+          <input class="form-component__input form-component__input--cvv" maxlength="3" type="text" id="cvv-input">
+          <label class="form-component__cvv-label inactive-cvv" for="cvv-input">CVV</label>
+        </div>
+        <button class="form-component__button" type="submit">Next step</button>
+    </section>
+
+    </form>
+    <div class="img-container">
+      <section class="image-section">
+        <img class="logo" src="./public/images/logo.png" alt="" class="logo">
+        <img class="image" src="./public/images/card.jpg" alt="">
+      </section>
+    </div>
+  </div>
+
+  <script type="module" src="/src/global-scripts/main.js"></script>
+  <script type="module" src="/src/pages/home-page/scripts/home-page.js"></script>
+</body>
+
+</html>

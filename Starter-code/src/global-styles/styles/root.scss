@@ -1,0 +1,154 @@
+/// Root Styles file
+/// Here we define all the root variables we need for our project.
+/// For examples see Material Design color system: https://m2.material.io/design/color/the-color-system.html
+
+:root {
+    --box-width: 1440px;
+    --box-height: 810px;
+    --min-width-form: 440px;
+    --margin-left-form: 64px;
+    --logo-display: none;
+    --logo-desktop-display: block;
+
+    --date-width: 59.32%;
+    --cvv-width: 37.50%;
+    --cvv-label-right: 26.7%;
+
+    --homepage-width: 100%;
+
+    --name-label-top: 172px;
+    --card-label-top: 242px;
+    --date-label-top: 312px;
+    --cvv-label-top: 312px;
+
+    --name-label-top-inactive: 182px;
+    --card-label-top-inactive: 252px;
+    --date-label-top-inactive: 322px;
+    --cvv-label-top-inactive: 322px;
+
+    --margin-big: 48px;
+    --margin-medium: 32px;
+    --margin-small: 14px;
+    --flex-direction: row;
+    --header-font-size: 40px;
+
+    --align-items-homepage: ;
+
+    --image-section-height: 100%;
+    --image-section-width: 100%;
+
+    --image-width: 101%;
+    --image-height: auto;
+
+    --padding-right-header: 148px;
+    --text-align-header: start;
+
+    --header-align-self: flex-start;
+
+    --form-margin-top: -24px;
+    --form-min-width: 74%;
+
+    --label-left: 24px;
+}
+
+
+@media only screen and (max-width: 1240px) {
+    :root {
+        --cvv-label-right: 24.5%;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 834px) {
+    :root {
+        --flex-direction: column-reverse;
+        --logo-display: block;
+        --logo-desktop-display: none;
+        --box-width: 100%;
+        --box-height: auto;
+        --image-width: 90.8%;
+        --image-height: 105%;
+        --align-items-homepage: center;
+        --logo-x: 50.18%;
+        --logo-y: 85.74%;
+        --logo-translate: translateX(-50%);
+
+        --image-section-height: 574px;
+        --image-section-width: 85%;
+
+        --padding-right-header: 0px;
+        --text-align-header: center;
+        --header-align-self: center;
+
+        --form-margin-top: 86.8px;
+        --min-width-form: 360px;
+
+        --name-label-top-inactive: 182px;
+        --card-label-top-inactive: 252px;
+        --date-label-top-inactive: 322px;
+        --cvv-label-top-inactive: 322px;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 550px) {
+    :root {
+
+        --label-left: 14px;
+        --cvv-label-right: 23.7%;
+        --font-size-label-inactive: 14px;
+
+    }
+
+}
+
+
+@media only screen and (max-width: 375px) {
+    :root {
+
+
+        --min-width-form: 180px;
+        --margin-left-form: 16px;
+        --date-width: 61.32%;
+        --cvv-width: 35.20%;
+        --cvv-label-right: 20.6%;
+        --margin-big: 32px;
+        --header-font-size: 24px;
+        --header-align-self: flex-start;
+        --text-align-header: left;
+
+        --name-label-top: 110px;
+        --card-label-top: 180px;
+        --date-label-top: 250px;
+        --cvv-label-top: 250px;
+
+
+        --name-label-top-inactive: 120px;
+        --card-label-top-inactive: 190px;
+        --date-label-top-inactive: 260px;
+        --cvv-label-top-inactive: 260px;
+
+
+        --form-margin-top: 26.8px;
+        --image-width: 113%;
+        --image-height: 100%;
+        --margin-medium: 30px;
+        --logo-y: 92.74%;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 300px) {
+    :root {
+        --label-left: 14px;
+        --font-size-label-inactive: 12px;
+    }
+
+}

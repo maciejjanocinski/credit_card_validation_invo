@@ -1,0 +1,80 @@
+@import '_form-component';
+
+
+#home-page {
+
+    display: flex;
+    position: relative;
+    flex-direction: var(--flex-direction);
+    justify-content: flex-end;
+    align-items: var(--align-items-homepage);
+    width: var(--homepage-width);
+    height: 100%;
+    max-width: var(--box-width);
+    height: var(--box-height);
+    margin: 50px auto;
+
+    & .image-section {
+        position: relative;
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+
+        background-color: #F8FAFF;
+
+        height: auto;
+        max-height: var(--image-section-height);
+        width: var(--image-section-width);
+
+        & .image {
+
+
+            height: var(--image-height);
+            width: var(--image-width);
+
+
+        }
+
+    }
+
+    .img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F8FAFF;
+
+    }
+
+    & .form-section {
+        width: 100%;
+        max-width: 568px;
+        min-width: var(--min-width-form);
+        background-color: white;
+        display: flex;
+
+    }
+
+
+
+
+    & .logo {
+        width: 100px;
+        position: absolute;
+        left: var(--logo-x);
+        transform: translateX(-50%);
+        bottom: var(--logo-y);
+        display: var(--logo-display);
+        width: 82.25px;
+        height: 20.25px;
+
+        &-desktop {
+            display: var(--logo-desktop-display);
+            position: absolute;
+            left: 105px;
+            top: 65px;
+        }
+    }
+}
+
+@include form-component;
