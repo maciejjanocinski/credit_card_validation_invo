@@ -23,6 +23,11 @@ button.addEventListener('click', event => {
     event.preventDefault();
     alert('Sukces')
 
+    nameInput.value = "";
+    cardInput.value = "";
+    dateInput.value = "";
+    cvvInput.value = "";
+
 })
 
 function validateCreditCardNumber(cardNumber) {
@@ -198,7 +203,7 @@ dateInput.addEventListener('keydown', (e) => {
     }
 
     // Sprawdź, czy wpisano już drugi znak i czy nie ma już "/"
-    if (valueLength === 2 && value.indexOf('/') === -1) {
+    if (valueLength === 2 && value.indexOf('/') === -1 && value[2] !== '/') {
         input.value = value + '/';
     }
 });

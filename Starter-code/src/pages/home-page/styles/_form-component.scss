@@ -29,11 +29,13 @@
             height: 56px;
             border: 1px solid #DADFE9;
             border-radius: 18px;
-            padding: 0 22px;
-            padding-top: 15px;
+            padding: 0 23px;
+            letter-spacing: -0.03em;
+            padding-top: 16px;
             font-weight: 500;
             transition: all 0.3s ease-in-out;
-            padding-bottom: 13px;
+            padding-bottom: 2px;
+
 
             &:hover+label {
                 color: #8A94A8;
